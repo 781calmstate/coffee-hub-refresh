@@ -6,9 +6,7 @@
   "arrowParens": "avoid",
   "endOfLine": "auto",
 
-  "plugins": [
-    "@ianvs/prettier-plugin-sort-imports"
-  ],
+  "plugins": ["@ianvs/prettier-plugin-sort-imports"],
   "importOrder": [
     "^react$",
     "^react-dom$",
@@ -20,8 +18,13 @@
     "",
     "^(app|pages|widgets|features|shared)$",
     "^(app|pages|widgets|features|shared)(/.*)$",
+    "^@(/.*)?$",
+    "^@components(/.*)?$",
+    "^@assets(/.*)?$",
+    "^@views(/.*)?$",
     "",
-    "^[./]"
+    "^[./]",
+    ""
   ],
   "importOrderParserPlugins": ["typescript", "jsx", "decorators-legacy"],
   "importOrderTypeScriptVersion": "5.0.0"
