@@ -16,12 +16,7 @@
     "",
     "<THIRD_PARTY_MODULES>",
     "",
-    "^(app|pages|widgets|features|shared)$",
-    "^(app|pages|widgets|features|shared)(/.*)$",
-    "^@(/.*)?$",
-    "^@components(/.*)?$",
-    "^@assets(/.*)?$",
-    "^@views(/.*)?$",
+    "^@(components|assets|views|/.*)?$",
     "",
     "^[./]",
     ""
