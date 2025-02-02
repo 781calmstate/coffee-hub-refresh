@@ -1,5 +1,3 @@
-import 'dotenv/config';
-
 type EnvironmentVariables = {
   BASE_URL: string;
   PROJECT_NAME: string;
@@ -7,14 +5,14 @@ type EnvironmentVariables = {
 };
 
 const environmentVariables: EnvironmentVariables = {
-  BASE_URL: process.env.BASE_URL || '',
-  PROJECT_NAME: process.env.PROJECT_NAME || '',
-  ENV: process.env.ENV || '',
+  BASE_URL: import.meta.env.VITE_BASE_URL || '',
+  PROJECT_NAME: import.meta.env.VITE_PROJECT_NAME || '',
+  ENV: import.meta.env.VITE_ENV || '',
 };
 
-Object.values(environmentVariables).forEach(value => {
+Object.entries(environmentVariables).forEach(([key, value]) => {
   if (!value) {
-    throw new Error('Missing environment variable');
+    throw new Error('Missing environment variable: ' + key);
   }
 });
 
