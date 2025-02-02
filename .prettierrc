@@ -16,7 +16,7 @@
     "",
     "<THIRD_PARTY_MODULES>",
     "",
-    "^@(components|assets|views|/.*)?$",
+    "^@(components|assets|views|store|/.*)?$",
     "",
     "^[./]",
     ""
