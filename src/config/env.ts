@@ -1,11 +1,13 @@
 type EnvironmentVariables = {
   BASE_URL: string;
+  API_URL: string;
   PROJECT_NAME: string;
   ENV: string;
 };
 
 const environmentVariables: EnvironmentVariables = {
   BASE_URL: import.meta.env.VITE_BASE_URL || '',
+  API_URL: import.meta.env.VITE_API_URL || '',
   PROJECT_NAME: import.meta.env.VITE_PROJECT_NAME || '',
   ENV: import.meta.env.VITE_ENV || '',
 };
