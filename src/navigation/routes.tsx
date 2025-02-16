@@ -1,11 +1,11 @@
 import { Route } from 'react-router';
 
-import NotAuthenticated from '@/components/auth/NotAuthenticated';
-import Titled from '@/components/Titled';
+import { NotAuthenticated } from '@/components/auth/NotAuthenticated';
+import { Titled } from '@/components/Titled';
 
-import routesPaths from './routesPaths';
+import { routesPaths } from './routesPaths';
 
-const routes = [
+export const routes = [
   <Route
     key={routesPaths.HOME}
     path={routesPaths.HOME}
@@ -18,5 +18,3 @@ const routes = [
     }
   />,
 ];
-
-export default routes;

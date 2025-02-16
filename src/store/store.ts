@@ -2,7 +2,7 @@ import { configureStore } from '@reduxjs/toolkit';
 import { setupListeners } from '@reduxjs/toolkit/query';
 
 import { postApi } from '../services';
-import authReducer from './slices/auth/slice';
+import { authReducer } from './slices/auth/slice';
 
 const apiReducers = [postApi];
 

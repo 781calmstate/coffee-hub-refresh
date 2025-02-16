@@ -1,4 +1,4 @@
-export default {
+export const routesPaths = {
   HOME: '/home',
   LOGIN: '/login',
   POST_LIST: '/posts',

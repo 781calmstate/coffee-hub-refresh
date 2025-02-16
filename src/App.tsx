@@ -2,8 +2,8 @@ import React from 'react';
 
 import { BrowserRouter, Route, Routes } from 'react-router';
 
-import Titled from '@/components/Titled';
-import routes from '@/navigation/routes';
+import { Titled } from '@/components/Titled';
+import { routes } from '@/navigation/routes';
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
           path={'*'}
           element={
             <Titled title="Page not found">
-              <div>Not Found</div>
+              <div className="p-4">Not Found</div>
             </Titled>
           }
         />

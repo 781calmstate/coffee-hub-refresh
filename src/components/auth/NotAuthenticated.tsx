@@ -5,8 +5,6 @@ type Props = {
   redirectTo?: string;
 };
 
-const NotAuthenticated = ({ children }: Props) => {
+export const NotAuthenticated = ({ children }: Props) => {
   return children;
 };
-
-export default NotAuthenticated;

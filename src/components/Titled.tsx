@@ -7,12 +7,10 @@ type Props = {
   children: ReactElement;
 };
 
-const Titled = ({ children, title }: Props) => {
+export const Titled = ({ children, title }: Props) => {
   useEffect(() => {
     document.title = `${environmentVariables.PROJECT_NAME} - ${title}`;
   }, [title]);
 
   return children;
 };
-
-export default Titled;
